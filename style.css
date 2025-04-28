@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 1000ms 0s ease;
+   font-family: "Poppins";
+}
+body{
+    /* background-color: rgb(216, 228, 192); */
+
+}
+#home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    /* border: 1px solid red; */
+    flex-basis: 10%;
+    display: flex;
+    /* background-color: black; */
+}
+#nav_one{
+    /* border: 2px solid red; */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+#nav_one h1{
+    font-size: 70px;
+    color: rgb(188, 38, 38);
+}
+#nav_one span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    position: relative;
+    top: 10px;
+    letter-spacing: 2px;
+    left: 3px;
+    color: aliceblue;
+}
+#nav_two{
+    /* border: 2px solid green; */
+    flex-basis: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 50px;
+}
+#nav_two a{
+    font-family:"Poppins",serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+input{
+    height: 35px;
+    width: 300px;
+    border-radius: 30px;
+    padding: 10px;
+   text-indent: 25px;
+   font-size: 15px;
+   border: none;
+   outline: none;
+}
+#search_icon{
+    position: relative;
+    left: 70px;
+}
+#search_icon:hover{
+    scale: 1.3;
+}
+#bgimg{
+    background-image: url(./assets/banner2.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+}
+#home_article{
+    flex-basis: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+    background-size: cover;
+}
+#home_article h1{
+    font-family: "Poppins",serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: rgb(229, 228, 228);
+}
+#home_article h1 span{
+    font-size: 100px;
+    color: rgb(197, 46, 46);
+    letter-spacing: 3px;
+}
+#home_article #slogan{
+    font-size: 20px;
+    color: white;
+    font-family: "Poppins",serif;
+    font-weight: 300;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#info button{
+    width: 209px;
+    height: 56px;
+    border: none;
+    background-color: white;
+    color: red;
+    font-family: "Poppins",serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 500ms 0s ease;
+}
+#info button:hover{
+    color: white;
+    background-color: red;
+}
+
+/* ALBUMS */
+#albums{
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+    background: radial-gradient( ellipse, green 20%, white 80%)
+      
+}
+#album_title{
+    margin: 20px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 60px;
+    font-weight: 600;
+
+}
+#song_container{
+    /* border: 2px solid greenyellow; */
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 0.5px solid rgb(130, 201, 130); */
+}
+.song{
+    /* border: 2px solid rebeccapurple; */
+    height: 330px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 15px;
+    border: 0.5px solid rgb(217, 217, 217);
+    transition: all 500ms 0s ease;
+    position: relative;
+}
+.song img{
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+}
+.song .play{
+    height: 50px;
+    width: 50px;
+    background-color: darkgreen;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 15px;
+    display: none;
+}
+.song:hover .play{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(91, 255, 129);
+    color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 140px;
+    right: 15px;
+    transition: 2s;
+}
+.fa-play{
+    font-size: 20px;
+}
+.song h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins";
+    padding-top: 10px;
+
+}
+.song p{
+    font-size: 14px;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.song:hover{
+    scale: 1.02;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+
+/* Contact Page Starts Hear */
+
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(ellipse, rgb(36, 188, 162) 20% , white 80%)
+    
+}
+#contact_container{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+#contact_us,#get_in_touch,#new_music{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+#contact_us{
+    flex-basis: 25%;
+}
+#contact_us_one{
+    width: 100%;
+}
+#contact_us_one h3{
+    font-size: 30px;
+    text-align: center;
+}
+#contact_us_two{
+    width: 100%;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 40px;
+}
+#contact_us_two p{
+    position: relative;
+    top: 15px;
+    font-size: 14px;
+}
+#contact_us_three{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.icons{
+    height: 40px;
+    width: 40px;
+    background-color: color(srgb red green blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.icons i{
+    font-size: 20px;
+}
+#get_in_touch{
+    flex-basis: 45%;
+}
+#get_in_touch_one{
+    position: relative;
+    font-size: 25px;
+    left: 150px;
+    width: 100%;
+}
+#get_in_touch_two{
+    width: 100%;
+    padding: 50px;
+}
+#get_in_touch_two input,textarea{
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+[type="submit"]{
+    background-color: maroon;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#new_music{
+    flex-basis: 30%;
+
+}
+#new_music_one{
+    
+    width: 100%;
+}
+#new_music_one h3{
+    font-size: 30px;
+    text-align: center;
+}
+.new_music_two{
+    position: relative;
+    top: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+
+}
+.new_music_two img{
+    height: 110px;
+    
+}
+#sound_bar{
+    background: repeating-conic-gradient(lightyellow 10%-40%,rgb(224, 172, 172) 30%-60% );
+    /* background: repeating-conic-gradient(lightblue 80%,lightgreen 50%,lightyellow 60%, rgb(224, 172, 172) 90% ); */
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+}
+#sound_bar input{
+    width:80%;
+}
+#sound_bar #footer_icons{
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#sound_bar #footer_icons i{
+border: 1px solid rgba(0,0,0,1.24);
+height: 50px;
+width: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+box-shadow: rgba(0,0,0,0.24);
+transition: 300ms;
+}
+#footer_icons i:hover{
+    scale: 1.02;
+}
+
