@@ -380,3 +380,34 @@ transition: 300ms;
     scale: 1.02;
 }
 
+
+/* Base styles (for desktop) */
+body {
+    font-size: 18px;
+    margin: 20px;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      margin: 10px;
+    }
+    nav {
+      display: block;
+    }
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: 1 1 100%; /* 1 per row on mobile */
+  }
+  @media (min-width: 768px) {
+    .item {
+      flex: 1 1 30%; /* 3 items per row on desktop */
+    }
+  }
+  
